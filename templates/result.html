@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card result-card">
+
+        <h1>Prediction Result</h1>
+
+        <p>The predicted Iris species is:</p>
+
+        <h2>{{ prediction }}</h2>
+
+        <!-- Flower Image -->
+        {% if prediction == 'Setosa' %}
+            <img src="{{ url_for('static', filename='images/setosa.jfif') }}" class="flower-img">
+        {% elif prediction == 'Versicolor' %}
+            <img src="{{ url_for('static', filename='images/versicolor.jfif') }}" class="flower-img">
+        {% elif prediction == 'Virginica' %}
+            <img src="{{ url_for('static', filename='images/virginica.jfif') }}" class="flower-img">
+        {% endif %}
+
+        <!-- Predict Again Button -->
+        <br><br>
+
+        <a href="/" class="predict-btn">Predict Again</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
