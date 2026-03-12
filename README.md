@@ -1,132 +1,191 @@
-Iris Flower Classification Web App
+# Student Performance Predictor (Machine Learning Project)
 
-This project is a Machine Learning powered web application built using Flask that predicts the species of an Iris flower based on user input measurements. The application uses a trained classification model and provides results through an interactive and user-friendly web interface.
+## Overview
 
-Project Overview
+The Student Performance Predictor is a machine learning web application that predicts whether a student will **pass or fail** based on demographic and educational information.
 
-The Iris Web App allows users to input four flower measurements:
+This project demonstrates a complete **end-to-end machine learning workflow**, including data preprocessing, feature engineering, model training, model comparison, model selection, and deployment using a Flask web application.
 
-Sepal Length
+The system trains multiple machine learning models and automatically selects the **best performing model** for predictions.
 
-Sepal Width
+---
 
-Petal Length
+## Features
 
-Petal Width
+- Multiple Machine Learning Models  
+  - Logistic Regression  
+  - Random Forest  
+  - Gradient Boosting  
 
-Based on these inputs, the trained machine learning model predicts the Iris species. The application then displays the predicted species along with the corresponding flower image.
+- Automatic Best Model Selection  
+- Model Accuracy Comparison  
+- Prediction Confidence Score  
+- Web Interface built using Flask  
+- Deployment Ready
 
-Features
+---
 
-Machine Learning model integration
+## Dataset
 
-Real-time prediction using Flask
+This project uses the **Students Performance in Exams dataset**.
 
-Modern and responsive user interface
+### Input Features
 
-Image display based on predicted species
+- Gender  
+- Race / Ethnicity  
+- Parental Level of Education  
+- Lunch Type  
+- Test Preparation Course  
 
-Predict Again functionality
+### Target Variable
 
-Clean and professional design
+- Pass / Fail
 
-Ready for deployment
+The model predicts whether a student will pass or fail based on these features.
 
-Technologies Used
+---
 
-Python
+## Machine Learning Workflow
 
-Flask
+1. Data Cleaning  
+2. Feature Engineering  
+3. One Hot Encoding  
+4. Model Training  
+5. Model Evaluation  
+6. Model Comparison  
+7. Best Model Selection  
+8. Web Application Integration
 
-Scikit-learn
+---
 
-NumPy
+## Model Performance
 
-HTML
+| Model | Accuracy |
+|------|---------|
+| Logistic Regression | 0.84 |
+| Random Forest | 0.91 |
+| Gradient Boosting | 0.89 |
 
-CSS
+Best performing model: **Random Forest**
 
-Jinja2
+---
 
-Pickle
+## Project Structure
 
-Project Structure
-iris-webapp/
-│
-├── app.py
-├── model.pkl
-│
-├── templates/
-│   ├── index.html
-│   └── result.html
-│
-├── static/
-│   ├── style.css
-│   └── images/
-│       ├── setosa.jfif
-│       ├── versicolor.jfif
-│       └── virginica.jfif
-│
-└── README.md
+```bash
+student-performance-predictor/
 
-How to Run the Project Locally
+data/
+    students.csv
 
-Step 1: Clone the repository
+model/
+    best_model.pkl
 
-git clone https://github.com/yourusername/iris-webapp.git
+templates/
+    index.html
+    result.html
 
+static/
+    css/style.css
 
-Step 2: Navigate to project folder
+assets/
+    homepage.png
 
-cd iris-webapp
+train_model.py
+app.py
+requirements.txt
+README.md
+```
 
+---
 
-Step 3: Install required libraries
+## Technologies Used
 
-pip install flask numpy scikit-learn
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)  
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)  
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikit-learn)  
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue?logo=plotly)  
+![HTML](https://img.shields.io/badge/HTML-Frontend-red?logo=html5)  
+![CSS](https://img.shields.io/badge/CSS-Styling-blue?logo=css3)  
 
+---
 
-Step 4: Run the Flask application
+## Installation
 
+### 1 Clone the Repository
+
+```bash
+git clone https://github.com/Hassan-Ali786/student-performance-predictor.git
+cd student-performance-predictor
+```
+
+---
+
+### 2 Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 3 Train the Machine Learning Models
+
+```bash
+python train_model.py
+```
+
+This will train the models and save the best model to:
+
+```
+model/best_model.pkl
+```
+
+---
+
+### 4 Run the Web Application
+
+```bash
 python app.py
+```
 
+---
 
-Step 5: Open in browser
+### 5 Open in Browser
 
+```
 http://127.0.0.1:5000
+```
 
-Machine Learning Model
+---
 
-The model was trained using the Iris dataset and saved as a pickle file. It predicts one of the following species:
+## Future Improvements
 
-Setosa
+- Add more student features for better prediction  
+- Create analytics dashboard for student insights  
+- Deploy the application on cloud platforms  
+- Store prediction history in a database  
+- Add visualization for model comparison  
 
-Versicolor
+---
 
-Virginica
-
-Use Cases
-
-Machine Learning deployment practice
-
-Flask web development learning
-
-Portfolio project for students and beginners
-
-Demonstration of ML model integration
-
-Future Improvements
-
-Add probability scores
-
-Add charts and visualization
-
-Deploy on cloud platform
-
-Improve UI with dashboard features
-
-Author
+## Author
 
 Hassan Ali
 
-Aspiring Data Scientist 
+GitHub  
+https://github.com/Hassan-Ali786
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Project Screenshot
+
+### Web App Homepage
+![Homepage](assets/homepage.png)
