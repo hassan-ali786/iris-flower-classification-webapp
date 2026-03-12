@@ -1,89 +1,68 @@
-# Student Performance Predictor Web Application
+# Iris Flower Classification Web Application
 
-An end-to-end Machine Learning web application that predicts whether a student will **pass or fail** based on demographic and educational factors.  
-The system leverages supervised learning techniques and provides real-time predictions through a professional web interface.
+A Machine Learning powered web application built using Flask that predicts the species of an Iris flower based on user input measurements.  
+The application provides real-time predictions through an interactive and user-friendly web interface and displays the corresponding flower image.
 
 ---
 
 ## Project Overview
 
-This application analyzes student data and predicts pass/fail outcomes.  
-It follows a complete ML lifecycle:
+The Iris Web App allows users to input four flower measurements:
 
-- Data preprocessing and feature encoding  
-- Model training using Random Forest, Gradient Boosting, and Logistic Regression  
-- Model evaluation using Accuracy scores  
-- Automatic best model selection  
-- Deployment using Flask  
-- Professional frontend integration for real-time predictions
+- Sepal Length  
+- Sepal Width  
+- Petal Length  
+- Petal Width  
 
----
-
-## Machine Learning Models
-
-**Algorithms:** Logistic Regression, Random Forest, Gradient Boosting  
-
-**Best Performing Model:** Random Forest  
-
-**Why Random Forest:**  
-
-- High accuracy on tabular datasets  
-- Resistant to overfitting  
-- Strong generalization capability  
-- Stable performance for small datasets  
+Based on these inputs, the trained machine learning model predicts the Iris species and displays the predicted species along with the corresponding flower image.  
 
 ---
 
-## Dataset Information
+## Features
 
-**Dataset:** Students Performance in Exams Dataset  
-
-**Features:**  
-
-- Gender  
-- Race / Ethnicity  
-- Parental Level of Education  
-- Lunch Type  
-- Test Preparation Course  
-
-**Target:** Pass / Fail  
+- **Machine Learning Model Integration:** Predicts Iris species using a trained model  
+- **Real-Time Prediction:** Instant predictions through Flask  
+- **Responsive Web Interface:** Modern, clean, and professional UI  
+- **Image Display:** Shows the corresponding flower image based on prediction  
+- **Predict Again Functionality:** Users can make multiple predictions easily  
+- **Ready for Deployment:** Clean architecture for production-ready use  
 
 ---
 
-## Model Performance Metrics
+## Machine Learning Model
 
-| Model | Accuracy |
-|-------|---------|
-| Logistic Regression | 0.84 |
-| Random Forest | 0.91 |
-| Gradient Boosting | 0.89 |
+**Dataset:** Iris Dataset  
 
-**Metric Explanation:**  
+**Model:** Trained classifier saved as a pickle file (`model.pkl`)  
 
-- **Accuracy:** Overall correct predictions  
-- **Best Model Selection:** Automatically selects Random Forest for predictions  
+**Predicted Species:**  
+- Setosa  
+- Versicolor  
+- Virginica  
+
+**Why This Model:**  
+- Works well with small tabular datasets  
+- Fast predictions for real-time web apps  
+- Simple and interpretable results  
 
 ---
 
 ## Project Structure
 
 ```bash
-student-performance-predictor/
-├── data/
-│   └── students.csv
-├── model/
-│   └── best_model.pkl
+iris-webapp/
+├── app.py
+├── model.pkl
 ├── templates/
 │   ├── index.html
 │   └── result.html
 ├── static/
-│   └── css/style.css
-├── train_model.py
-├── app.py
-├── requirements.txt
-├── README.md
-└── assets/
-    └── homepage.png
+│   ├── style.css
+│   └── images/
+│       ├── setosa.jfif
+│       ├── versicolor.jfif
+│       └── virginica.jfif
+└── README.md
 ```
 
 ---
@@ -93,39 +72,23 @@ student-performance-predictor/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Hassan-Ali786/student-performance-predictor.git
-cd student-performance-predictor
+git clone https://github.com/yourusername/iris-webapp.git
+cd iris-webapp
 ```
 
-2. Install dependencies:
+2. Install required libraries:
 
 ```bash
-pip install -r requirements.txt
+pip install flask numpy scikit-learn
 ```
 
-3. Train the models:
-
-```bash
-python train_model.py
-```
-
-4. Run the web application:
+3. Run the Flask application:
 
 ```bash
 python app.py
 ```
 
-Open a browser at `http://127.0.0.1:5000`, enter student details, and click **Predict**.
-
----
-
-## Key Features
-
-- Real-time pass/fail prediction  
-- Professional and user-friendly interface  
-- Multiple machine learning models with automatic best model selection  
-- Evaluation using Accuracy scores  
-- Modular and production-ready architecture  
+4. Open a browser at `http://127.0.0.1:5000` and start predicting.
 
 ---
 
@@ -134,40 +97,42 @@ Open a browser at `http://127.0.0.1:5000`, enter student details, and click **Pr
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)  
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)  
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)  
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)  
-![Matplotlib](https://img.shields.io/badge/Matplotlib-007D9C?style=flat&logo=matplotlib&logoColor=white)  
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)  
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)  
+![Jinja2](https://img.shields.io/badge/Jinja2-B41717?style=flat&logo=jinja&logoColor=white)  
+![Pickle](https://img.shields.io/badge/Pickle-5C2D91?style=flat)  
 
 ---
 
-## Real-World Applications
+## Use Cases
 
-- Academic institutions and schools  
-- Student performance analytics  
-- Education dashboards and reporting tools  
-- Data-driven decision making in education  
+- Machine Learning deployment practice  
+- Flask web development learning  
+- Portfolio project for students and beginners  
+- Demonstration of ML model integration  
 
 ---
 
 ## Future Improvements
 
-- Add more student features for better prediction  
-- Create analytics dashboard for student insights  
-- Deploy the application on cloud platforms  
-- Store prediction history in a database  
-- Add visualization for model comparison  
-- Multi-class prediction (grades A, B, C, Fail)  
+- Add probability scores for predictions  
+- Add charts and visualizations  
+- Deploy on cloud platforms (AWS, Render, Heroku)  
+- Improve UI with dashboard features  
+- Multi-class or multi-dataset flower prediction  
 
 ---
 
 ## Author
 
 Hassan Ali  
-Aspiring Data Scientist and Machine Learning Engineer  
+Aspiring Data Scientist and Full Stack Developer  
+
+GitHub: https://github.com/Hassan-Ali786  
 
 ---
 
 ## Application Screenshot
 
-![Student Performance Web App](assets/homepage.png)
+![Iris Flower Web App](assets/homepage.png)
