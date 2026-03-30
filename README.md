@@ -127,7 +127,7 @@ python app.py
 ## Author
 
 Hassan Ali  
-Aspiring Data Scientist and Machine learning Engineer
+Data Scientist and Machine learning Engineer
 
 GitHub: https://github.com/Hassan-Ali786  
 
