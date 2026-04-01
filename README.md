@@ -62,6 +62,8 @@ iris-webapp/
 │       ├── setosa.jfif
 │       ├── versicolor.jfif
 │       └── virginica.jfif
+├── assests/
+       ├── homepage.png
 └── README.md
 ```
 
@@ -129,7 +131,7 @@ python app.py
 Hassan Ali  
 Data Scientist and Machine learning Engineer
 
-GitHub: https://github.com/Hassan-Ali786  
+GitHub: https://github.com/hassan-ali786  
 
 ---
 
