@@ -74,7 +74,7 @@ iris-webapp/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/iris-webapp.git
+git clone https://github.com/hassan-ali786/iris-webapp.git
 cd iris-webapp
 ```
 
