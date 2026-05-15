@@ -81,7 +81,7 @@ cd iris-webapp
 2. Install required libraries:
 
 ```bash
-pip install flask numpy scikit-learn
+pip install requirements.txt
 ```
 
 3. Run the Flask application:
