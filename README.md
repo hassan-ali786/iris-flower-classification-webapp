@@ -122,7 +122,7 @@ python app.py
 ## Author
 
 Hassan Ali  
-Data Scientist and Machine learning Engineer
+Data Scientist & Machine learning Engineer
 
 GitHub: https://github.com/hassan-ali786  
 
