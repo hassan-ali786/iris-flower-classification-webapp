@@ -50,7 +50,7 @@ Based on these inputs, the trained machine learning model predicts the Iris spec
 ## Project Structure
 
 ```bash
-iris-webapp/
+iris-flower-classification-webapp/
 ├── app.py
 ├── model.pkl
 ├── templates/
@@ -74,8 +74,8 @@ iris-webapp/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/hassan-ali786/iris-webapp.git
-cd iris-webapp
+git clone https://github.com/hassan-ali786/iris-flower-classification-webapp.git
+cd iris-flower-classification-webapp
 ```
 
 2. Install required libraries:
