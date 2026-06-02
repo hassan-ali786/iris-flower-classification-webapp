@@ -1,4 +1,4 @@
-# Iris Flower Classification Web Application
+# Iris Flower Classification Web App
 
 A Machine Learning powered web application built using Flask that predicts the species of an Iris flower based on user input measurements.  
 The application provides real-time predictions through an interactive and user-friendly web interface and displays the corresponding flower image.
