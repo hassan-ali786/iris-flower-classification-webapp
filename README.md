@@ -129,7 +129,6 @@ python app.py
 Hassan Ali  
 Data Scientist & Machine learning Engineer
 
-GitHub: https://github.com/hassan-ali786  
 
 ---
 
