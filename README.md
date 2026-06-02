@@ -127,7 +127,7 @@ python app.py
 ## Author
 
 Hassan Ali  
-Data Scientist & Machine learning Engineer
+Data Scientist & ML Engineer
 
 
 ---
