@@ -5,7 +5,7 @@ The application provides real-time predictions through an interactive and user-f
 
 ---
 
-## Video Demo 
+## Video Demo:
 <video src="https://github.com/user-attachments/assets/ff7abfa6-e6d2-4885-8b10-7238758da5bb" width="100%" controls></video>
 
 ---
